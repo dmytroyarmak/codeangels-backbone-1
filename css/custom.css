@@ -1,0 +1,11 @@
+#backbone-title {
+  line-height: 1.5em;
+}
+#backbone-title img {
+  height: 1.5em;
+  margin: 0 0.2em 0 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  vertical-align: bottom;
+}
