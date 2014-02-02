@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Backbone - Part 1</title>
+		<title>Backbone - Introduction</title>
 
 		<meta name="description" content="Backbone - Part 1">
 		<meta name="author" content="Dmytro Yarmak">
@@ -54,28 +54,28 @@
 				<section>
 					<h1>1. Static HTML</h1>
 					<ul>
-						<li class="fragment">many years ago</li>
-						<li class="fragment">JS is very rare</li>
+						<li>many years ago</li>
+						<li>JS is very rare</li>
 					</ul>
 				</section>
 
 				<section>
 					<h1>2. jQeury</h1>
-					<li class="fragment">DOM</li>
-					<li class="fragment">AJAX</li>
-					<li class="fragment">Animation</li>
-					<li class="fragment">jQuery Plugins</li>
-					<li class="fragment" style='color: red'>Spaghetti code</li>
+					<li>DOM</li>
+					<li>AJAX</li>
+					<li>Animation</li>
+					<li>jQuery Plugins</li>
+					<li style='color: red'>Spaghetti code</li>
 				</section>
 
 				<section>
 					<h1>3. MV*</h1>
 					<ul>
-						<li class="fragment">MVC</li>
-						<li class="fragment">MVP</li>
-						<li class="fragment">MVVV</li>
+						<li>MVC</li>
+						<li>MVP</li>
+						<li>MVVV</li>
 					</ul>
-					<p class="fragment">Reading: <a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvcmvp">JavaScript MV* Patterns</a></p>
+					<p>Reading: <a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvcmvp">JavaScript MV* Patterns</a></p>
 				</section>
 
 				<section>
@@ -85,72 +85,72 @@
 				<section>
 					<h1>What is MVC?</h1>
 					<ul>
-						<li class="fragment">Architectural design pattern</li>
-						<li class="fragment">Designed by Trygve Reenskaug - Smalltalk-80 (1979)</li>
-						<li class="fragment">Described in depth in 1995's “Design Patterns: Elements of Reusable Object-Oriented Software” (The "GoF" book),</li>
+						<li>Architectural design pattern</li>
+						<li>Designed by Trygve Reenskaug - Smalltalk-80 (1979)</li>
+						<li>Described in depth in 1995's “Design Patterns: Elements of Reusable Object-Oriented Software” (The "GoF" book),</li>
 					</ul>
 				</section>
 
 				<section>
 					<h1>How MVC helps as?</h1>
 					<ul>
-						<li class="fragment">It improves application organization through a separation of concerns.</li>
-						<li class="fragment">It enforces the isolation of business data (<strong>Models</strong>) from user interfaces (<strong>Views</strong>), with a third component (<strong>Controllers</strong>) traditionally managing logic and user-input.</li>
+						<li>It improves application organization through a separation of concerns.</li>
+						<li>It enforces the isolation of business data (<strong>Models</strong>) from user interfaces (<strong>Views</strong>), with a third component (<strong>Controllers</strong>) traditionally managing logic and user-input.</li>
 					</ul>
 				</section>
 
 				<section>
 					<h1>Models</h1>
 					<ul>
-						<li class="fragment">manage the data for an application</li>
-						<li class="fragment">‘type’ of data you can model — like a User, Photo or Note</li>
-						<li class="fragment">notify its observers that a change has occurred</li>
+						<li>manage the data for an application</li>
+						<li>‘type’ of data you can model — like a User, Photo or Note</li>
+						<li>notify its observers that a change has occurred</li>
 					</ul>
 				</section>
 
 				<section>
 					<h1>Views</h1>
 					<ul>
-						<li class="fragment">visual representation of models</li>
-						<li class="fragment">present a filtered view of models' current state</li>
-						<li class="fragment">building and maintaining a DOM element</li>
-						<li class="fragment">observes model changes to update itself accordingly</li>
+						<li>visual representation of models</li>
+						<li>present a filtered view of models' current state</li>
+						<li>building and maintaining a DOM element</li>
+						<li>observes model changes to update itself accordingly</li>
 					</ul>
 				</section>
 
 				<section>
 					<h1>Controllers</h1>
 					<ul>
-						<li class="fragment">intermediary between models and views</li>
-						<li class="fragment">responsible for updating the model when the user manipulates the view</li>
-						<li class="fragment">Backbone.js doesn't actually have true controllers</li>
+						<li>intermediary between models and views</li>
+						<li>responsible for updating the model when the user manipulates the view</li>
+						<li>Backbone.js doesn't actually have true controllers</li>
 					</ul>
 				</section>
 
 				<section>
 					<h1>When Do You Need A JavaScript MV* Framework?</h1>
 					<ul>
-						<li class="fragment">complex user interface</li>
-						<li class="fragment">avoid spaghetti code</li>
-						<li class="fragment">much of the heavy lifting for viewing or manipulating that data will be occurring in the browser</li>
-						<li class="fragment">app communicates only with an API or back-end data service</li>
+						<li>complex user interface</li>
+						<li>avoid spaghetti code</li>
+						<li>much of the heavy lifting for viewing or manipulating that data will be occurring in the browser</li>
+						<li>app communicates only with an API or back-end data service</li>
 					</ul>
 				</section>
 
 				<section>
 					<h1>Single-page application</h1>
 					<ul>
-						<li class="fragment">no refresh</li>
-						<li class="fragment">long life-time</li>
-						<li class="fragment">Examples: GMail and Google Docs</li>
+						<li>no refresh</li>
+						<li>long life-time</li>
+						<li>Examples: GMail and Google Docs</li>
 					</ul>
 				</section>
 
 				<section>
 					<h1>Where does MV* framework may be overkill?</h1>
 					<ul>
-						<li class="fragment">server makes most of the heavy-lifting of Views/pages</li>
-						<li class="fragment">using a little JavaScript or jQuery to make things a little more interactive</li>
+						<li>server makes most of the heavy-lifting of Views/pages</li>
+						<li>using a little JavaScript or jQuery to make things a little more interactive</li>
 					</ul>
 				</section>
 
@@ -160,7 +160,7 @@
 
 				<section>
 					<h1>The Challenge Of Choice</h1>
-					<h2 class="fragment">Too Many Options</h2>
+					<h2>Too Many Options</h2>
 				</section>
 
 				<section>
@@ -179,22 +179,22 @@
 				<section>
 					<h2>What is Backbone?</h2>
 					<ul>
-						<li class="fragment">In development since 2010</li>
-						<li class="fragment">Current version: 1.1.0</li>
-						<li class="fragment">Relatively mature</li>
-						<li class="fragment">"Not a framework"</li>
-						<li class="fragment">Tool that gives you the freedom to design the full experience of your web application</li>
-						<li class="fragment">Very simple</li>
-						<li class="fragment">Flexibility</li>
+						<li>In development since 2010</li>
+						<li>Current version: 1.1.0</li>
+						<li>Relatively mature</li>
+						<li>"Not a framework"</li>
+						<li>Tool that gives you the freedom to design the full experience of your web application</li>
+						<li>Very simple</li>
+						<li>Flexibility</li>
 					</ul>
 				</section>
 
 				<section>
 					<h2>Community</h2>
 					<ul>
-						<li class="fragment">~17.000 stars on GitHub</li>
-						<li class="fragment">many courses, tutorials, screencasts</li>
-						<li class="fragment">a lot of plugins and extensions</li>
+						<li>~17.000 stars on GitHub</li>
+						<li>many courses, tutorials, screencasts</li>
+						<li>a lot of plugins and extensions</li>
 					</ul>
 				</section>
 
@@ -210,18 +210,18 @@
 				<section>
 					<h2>Dependencies</h2>
 					<ul>
-						<li class="fragment"><a href="http://jquery.com/">JQuery</a> - Recommended for DOM manipulation and Ajax</li>
-						<li class="fragment"><a href="http://underscorejs.org/">Underscore.js</a> - Backbone's only hard dependency</li>
+						<li><a href="http://jquery.com/">JQuery</a> - Recommended for DOM manipulation and Ajax</li>
+						<li><a href="http://underscorejs.org/">Underscore.js</a> - Backbone's only hard dependency</li>
 					</ul>
 				</section>
 
 				<section>
 					<h2>Alternative Dependencies</h2>
 					<ul>
-						<li class="fragment"><a href="http://zeptojs.com/">Zepto</a> - A jQuery alternative</li>
-						<li class="fragment"><a href="http://lodash.com/">Lo-Dash</a> - A performance-minded Underscore alternative with customs builds and additional features</li>
-						<li class="fragment"><a href="https://github.com/inkling/backbone.native">Backbone.Native</a> -  Only native DOM APIs</li>
-						<li class="fragment"><a href="http://exosjs.com">Exoskeleton</a> -  Backbone fork with 100% optional dependencies, speed improvements and other enhancements</li>
+						<li><a href="http://zeptojs.com/">Zepto</a> - A jQuery alternative</li>
+						<li><a href="http://lodash.com/">Lo-Dash</a> - A performance-minded Underscore alternative with customs builds and additional features</li>
+						<li><a href="https://github.com/inkling/backbone.native">Backbone.Native</a> -  Only native DOM APIs</li>
+						<li><a href="http://exosjs.com">Exoskeleton</a> -  Backbone fork with 100% optional dependencies, speed improvements and other enhancements</li>
 					</ul>
 				</section>
 
@@ -232,20 +232,20 @@
 				<section>
 					<h2>Base Components</h2>
 					<ul>
-						<li class="fragment">Backbone.Model</li>
-						<li class="fragment">Backbone.Collection</li>
-						<li class="fragment">Backbone.View</li>
-						<li class="fragment">Backbone.Router</li>
+						<li>Backbone.Model</li>
+						<li>Backbone.Collection</li>
+						<li>Backbone.View</li>
+						<li>Backbone.Router</li>
 					</ul>
 				</section>
 
 				<section>
 					<h2>Internal Components</h2>
 					<ul>
-						<li class="fragment">Backbone.#####.extend</li>
-						<li class="fragment">Backbone.Events</li>
-						<li class="fragment">Backbone.History</li>
-						<li class="fragment">Backbone.sync</li>
+						<li>Backbone.#####.extend</li>
+						<li>Backbone.Events</li>
+						<li>Backbone.History</li>
+						<li>Backbone.sync</li>
 					</ul>
 				</section>
 
@@ -286,6 +286,162 @@ var User = Backbone.Model.extend({
 
 var user = new User(); // => 'One more user was created!'
 					</code></pre>
+				</section>
+
+				<section>
+					<h2>Backbone.Model</h2>
+					<ul>
+						<li>Data of application</li>
+						<li>Validation</li>
+						<li>Computed properties</li>
+						<li>Persistence</li>
+						<li>Events</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Demo: <a href="">Step 2</a></h3>
+				</section>
+
+				<section>
+					<h2>Backbone.Collection</h2>
+					<ul>
+						<li>Array of models</li>
+						<li>A lot of methods for models manipulation</li>
+						<li>Sorting</li>
+						<li>Find/get models within collection</li>
+						<li>Aggregate Model's events</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Demo: <a href="">Step 3</a></h3>
+				</section>
+
+				<section>
+					<h2>Backbone.View</h2>
+					<ul>
+						<li>Represent Models or Collection in DOM</li>
+						<li>Listen to events of Model/Collection to change presentation</li>
+						<li>Listen to DOM's event's to make some business logic</li>
+						<li>Represent one DOM element with its children</li>
+						<li>el($el) represent Root DOM element of current view</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Demo: <a href="">Step 4</a></h3>
+				</section>
+
+				<section>
+					<h2>Templates</h2>
+					<p>You can use anything you want</p>
+					<ul>
+						<li><a href="http://underscorejs.org/#template">_.template</a></li>
+						<li><a href="http://handlebarsjs.com/">Handlebars</a></li>
+						<li><a href="http://mustache.github.io/">mustache</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Underscore Templates</h2>
+					<ul>
+   					<li>interpolate variables: <code><%= … %></code></li>
+   					<li>HTML-escaped interpolation: <code><%- … %></code></li>
+   					<li>executing arbitrary JavaScript: <code><% … %></code></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Loading templates</h2>
+					<ul>
+						<li>script tag with "text/template" type</li>
+						<li>precompiling of templates</li>
+						<li>async loading</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Script Tag</h2>
+					<h3>Template</h3>
+					<pre><code>
+<script type="text/template" id="my-view-template">
+  <h1>Name: <%= name %>
+  <h2>Tasks</h2>
+  <ul>
+    <% _.each(tasks, function(task) { %>
+      <li><%= task %></li>
+    <% } %>
+  </ul>
+</script>
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Sprocket for Ruby on Rails</h2>
+					<h3>View</h3>
+					<pre><code>
+var MyView = Backbone.View.extend({
+  template: _.template($('#my-view-template').html()),
+
+  render: function() {
+    var html = this.template({
+      name: 'My Name',
+      tasks: ['task1', 'task2']
+    });
+
+    this.$el.html(html);
+
+    return this;
+  }
+});
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Sprocket for Ruby on Rails</h2>
+					<h3>Template</h3>
+					<pre><code>
+/app/assets/templates/my_view_template.jst.ejs
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Sprocket for Ruby on Rails</h2>
+					<h3>View</h3>
+					<pre><code>
+var MyView = Backbone.View.extend({
+  template: JST['my_view_template'],
+
+  render: function() {
+    var html = this.template({
+      name: 'My Name',
+      tasks: ['task1', 'task2']
+    });
+
+    this.$el.html(html);
+
+    return this;
+  }
+});
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>Demo: <a href="">Step 5</a></h3>
+				</section>
+
+				<section>
+					<h2>Backbone.Router</h2>
+					<ul>
+						<li>represent the page state</li>
+						<li>use back and forth buttons</li>
+						<li>parsing params</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Demo: <a href="">Step 6</a></h3>
 				</section>
 
 				<section>
