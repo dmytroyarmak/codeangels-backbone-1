@@ -177,11 +177,6 @@
 				</section>
 
 				<section>
-					<h2>What we are going to build?</h2>
-					<img src="assets/contact-manager.jpg" alt="">
-				</section>
-
-				<section>
 					<h2>What is Backbone?</h2>
 					<ul>
 						<li class="fragment">In development since 2010</li>
@@ -204,6 +199,15 @@
 				</section>
 
 				<section>
+					<h2>What we are going to build?</h2>
+					<img src="assets/contact-manager.jpg" alt="">
+				</section>
+
+				<section>
+					<h3>Demo: <a href="">Step 0</a></h3>
+				</section>
+
+				<section>
 					<h2>Dependencies</h2>
 					<ul>
 						<li class="fragment"><a href="http://jquery.com/">JQuery</a> - Recommended for DOM manipulation and Ajax</li>
@@ -219,6 +223,69 @@
 						<li class="fragment"><a href="https://github.com/inkling/backbone.native">Backbone.Native</a> -  Only native DOM APIs</li>
 						<li class="fragment"><a href="http://exosjs.com">Exoskeleton</a> -  Backbone fork with 100% optional dependencies, speed improvements and other enhancements</li>
 					</ul>
+				</section>
+
+				<section>
+					<h3>Demo: <a href="">Step 1</a></h3>
+				</section>
+
+				<section>
+					<h2>Base Components</h2>
+					<ul>
+						<li class="fragment">Backbone.Model</li>
+						<li class="fragment">Backbone.Collection</li>
+						<li class="fragment">Backbone.View</li>
+						<li class="fragment">Backbone.Router</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Internal Components</h2>
+					<ul>
+						<li class="fragment">Backbone.#####.extend</li>
+						<li class="fragment">Backbone.Events</li>
+						<li class="fragment">Backbone.History</li>
+						<li class="fragment">Backbone.sync</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h2>Extend</h2>
+					<p>Way of creating your custom classes</p>
+					<pre><code>
+var User = Backbone.Model.extend({ ... });
+
+var Users = Backbone.Collection.extend({ ... });
+
+var UserView = Backbone.View.extend({ ... });
+
+var UserRouter = Backbone.Router.extend({ ... });
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Inheritance with Extend</h2>
+					<p>You also can extend from your classes</p>
+					<pre><code>
+var User = Backbone.Model.extend({ ... });
+
+var Admin = User.extend({ ... })
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Initialize</h2>
+					<p>Constructor for class</p>
+					<pre><code>
+var User = Backbone.Model.extend({
+  initialize: function(){
+    console.log('One more user was created!');
+  }
+});
+
+var user = new User(); // => 'One more user was created!'
+					</code></pre>
 				</section>
 
 				<section>
