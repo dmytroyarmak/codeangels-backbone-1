@@ -1,8 +1,9 @@
-#backbone-title {
+/*#backbone-title {
   line-height: 1.5em;
-}
-#backbone-title img {
-  height: 1.5em;
+}*/
+#backbone-logo {
+  width: 300px;
+  height: auto;
   margin: 0 0.2em 0 0;
   background: none;
   border: none;
